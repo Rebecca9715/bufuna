@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>拔一颗布福娜，看见一整个彭水</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -42,10 +41,11 @@
                 '100%': { opacity: '1', transform: 'translateY(0)' },
               }
             }
-          },
+          }
         },
       }
     </script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
       /* Disable selection for better app-like feel */
       body {
@@ -57,18 +57,12 @@
         user-select: none;
         background-color: #0F2C24;
       }
+      html, body, #root { min-height: 100vh; height: 100%; }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3"
-  }
-}
-</script>
+  
 </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
